@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     var count: Int = 0
     var numberOne: Int = 1
     var numberTwo: Int = 2
+    var numberThree: Int = 3
     var textLabel: String = "Вывод информации:"
 
     @IBOutlet weak var calculatorOutput: UILabel!
@@ -24,11 +25,15 @@ class ViewController: UIViewController {
         calculatorOutput.text = textLabel + "\(count)"
     }
     
+    func numberOnePlusOne (numberOne: Int) -> Int {
+        return self.numberOne = numberOne + numberOne
+    }
+    
     @IBAction func oneButton(_ sender: Any) {
         calculatorOutput.text = textLabel + "\(numberOne)"
         
         if (slozenieButtonOutlet != nil) == true {
-    
+            count = numberOnePlusOne(numberOne: numberOne)
         } else if (vuchitanieButtonOutlet != nil) == true {
             
         } else if (delenieButtonOutlet != nil) == true {
