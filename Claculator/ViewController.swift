@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     func numberOnePlusOne (numberOne: Int) -> Int {
-        return self.numberOne = numberOne + numberOne
+        
     }
     
     @IBAction func oneButton(_ sender: Any) {
